@@ -9,8 +9,9 @@
       int sum = 0;
       Die bob;
       background(100);
+      for(int y = 100; y <500; y+=55){
       for(int x = 50; x<500; x+=55){
-      bob = new Die(x,150);
+      bob = new Die(x,y);
       bob.roll();
       bob.show();
       if (bob.count==1)
@@ -27,7 +28,9 @@
       sum=sum+6;
       textSize(30);
      }
-     text("The total of all dice is " +sum , 150,250);
+      }
+     text("The total of all dice is " +sum , 150,50);
+  
   }
   void mousePressed()
   { 
